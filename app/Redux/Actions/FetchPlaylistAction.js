@@ -8,7 +8,7 @@ export function FetchPlaylist(){
   return dispatch => {
     dispatch({ type: FETCH_PLAYLIST_BEGIN });
 
-    return fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-21&sortBy=publishedAt&apiKey=4060bf8630324f66a96bcaa59e51290e')
+    return fetch('https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-22&sortBy=publishedAt&apiKey=4060bf8630324f66a96bcaa59e51290e')
     .then(res => res.json())
     .then(resJson => {
       dispatch({ type: FETCH_PLAYLIST_SUCCESS, payload: resJson })
