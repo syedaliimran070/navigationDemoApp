@@ -2,12 +2,13 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   mainContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    marginLeft: 15
   },
-  labelText: {
-    fontSize: 30
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingTop: 10,
+    paddingBottom: 10
   }
 });
 
